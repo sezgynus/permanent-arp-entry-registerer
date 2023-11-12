@@ -10,7 +10,7 @@ This script automates the process of registering a permanent ARP entry on a ZTE 
 - [License](#license)
 
 ## Usage
-
+https://youtu.be/vuDeCseHWLg?t=789
 1. Install the required dependencies:
 
    ```bash
