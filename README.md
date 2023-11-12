@@ -19,7 +19,7 @@ https://youtu.be/vuDeCseHWLg?t=789
 2. Run the script:
 
    ```bash
-   python program.py <host_ip_or_name> <port> <ssh_username> <ssh_password> <arp_ip> <arp_mac> <linux_user> <linux_password>
+   python permanent_arp_entry_registerer.py <host_ip_or_name> <port> <ssh_username> <ssh_password> <arp_ip> <arp_mac> <linux_user> <linux_password>
    
 ## Features
 
