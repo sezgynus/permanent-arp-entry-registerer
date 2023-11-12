@@ -33,7 +33,6 @@ def execute_commands(client, commands, arp_params, linux_user, linux_password):
             if "{arp_ip}" in command["send"] and "{arp_mac}" in command["send"]:
                 command["send"] = command["send"].format(**arp_params)
 
-            command["send"] = command["send"].replace("root", linux_user).replace("$F1r1@dl", linux_password)
             send_command(channel, command["send"])
 
             if "Password:" in command["wait_for"]:
@@ -79,7 +78,7 @@ def main():
         {"wait_for": "Password:", "send": linux_password},
         {"wait_for": "CLI>", "send": "shell"},
         {"wait_for": "Login:", "send": linux_user},
-        {"wait_for": "Password:", "send": linux_password},
+        {"wait_for": "Password:", "send": "$F1r1@dl"},
         {"wait_for": "BusyBox", "send": f"ip neighbour replace {arp_ip} lladdr {arp_mac} dev br0 nud permanent"}
     ]
 
