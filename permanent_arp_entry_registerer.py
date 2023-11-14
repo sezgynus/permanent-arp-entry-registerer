@@ -63,11 +63,11 @@ def print_colored(text, color_code):
 
 def print_banner():
     if not args.quiet:
-        line_length = 75
+        line_length = 82
         title = "Permanent ARP Entry registerer"
         version = "for \"ZTE ZXHN H298A V1.0\""
         developer = f"Developed by {print_colored('sezgynus', '92')}"
-        github_repo = "GitHub Repository: [Learn More](https://github.com/sezgynus)"
+        github_repo = "GitHub Repository:(https://github.com/sezgynus/permanent-arp-entry-registerer)"
 
         print("*" * line_length)
         print(f"*{title.center(line_length - 2)}*")
